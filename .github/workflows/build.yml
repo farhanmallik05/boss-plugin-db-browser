@@ -5,6 +5,9 @@ on:
   push:
     branches: [main]
 
+permissions:
+  contents: write
+
 jobs:
   release:
     uses: risa-labs-inc/BossConsole-Releases/.github/workflows/plugin-release.yml@main
