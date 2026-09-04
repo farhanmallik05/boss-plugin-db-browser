@@ -1,0 +1,31 @@
+{
+  "manifestVersion": 1,
+  "pluginId": "ai.rever.boss.plugin.dynamic.dbbrowser",
+  "displayName": "Database Browser",
+  "version": "1.0.0",
+  "apiVersion": "1.0.51",
+  "minBossVersion": "9.2.20",
+  "mainClass": "ai.rever.boss.plugin.dynamic.dbbrowser.DbBrowserDynamicPlugin",
+  "type": "panel",
+  "description": "Database browser and SQL query inspector plugin for BOSS",
+  "author": "Farhan Mallik",
+  "url": "https://github.com/farhanmallik05/boss-plugin-db-browser",
+  "panel": {
+    "icon": "Storage",
+    "location": "left.bottom.bottom",
+    "order": 60
+  },
+  "requiredPermissions": [
+    "db.read"
+  ],
+  "definedPermissions": [
+    {
+      "name": "db.read",
+      "description": "Read and query database schemas and tables"
+    },
+    {
+      "name": "db.write",
+      "description": "Execute database mutations and write operations"
+    }
+  ]
+}
